@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Far-Fall Ville</title>
+  <script type="text/javascript" src="jquery.js"></script>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body id="level1">
+<div id="container">
+<audio class="player" autoplay="autoplay" loop="true">
+
+  <source src="music/Diabolus.mp3" type="audio/mpeg">
+
+</audio>
+<audio class="sound" controls preload="none" style="display:none">
+    <source src="music/twinkle.mp3" type="audio/mpeg">
+
+</audio>
+<audio class="dust" controls preload="none" style="display:none">
+    <source src="music/twinkle.mp3" type="audio/mpeg">
+
+</audio>
+
+</div>
+<div id="butterfly" class="all1" style="display:none;"></div>
+<div id="candle" class="all1" style="display:none;"></div>
+<div id="knife" class="all1" style="display:none;"></div>
+<div id="rope" class="all1" style="display:none;"></div>
+<div id="book" class="all1" style="display:none;"></div>
+<div id="apple" class="all1" style="display:none;"></div>
+<div id="moon" class="all1" style="display:none;"></div>
+<div id="coin" class="all1" style="display:none;"></div>
+<div id="axe" class="all1" style="display:none;"></div>
+<div id="snow" class="all1" style="display:none;"></div>
+<div id="fork" class="all1" style="display:none;"></div>
+<div id="feather" class="all1" style="display:none;"></div>
+
+<button type="submit" id="start">Start Game</button>
+
+<div class="instructions" style="display:none;">
+<h2 class="presentation">- This morning the Far-Fall Ville woke up from it's usual 9 months sleep nap.<br>
+- But this time it's people discovered that during the course of the other seasons...<br>
+- They have been ROBBED!<br>
+- The trail of hints through the forest could have the answer...</h2>
+<button type="submit" id="continue">Continue Reading...</button>
+</div>
+
+<div class="instructions1" style="display:none;">
+<h2 class="presentation"><br>- Find all the hidden elements in the Far-Fall Forest<br>
+<br>- Follow the track to find out who is responsible<br>
+<br>- If you get lost click on the element's name to take a hint<br></h2>
+<button type="submit" id="game">Start Game</button>
+</div>
+<div class="settings">
+    <span id="candl" class="element" style="display:none;">Candle</span>
+    <span id="knif" class="element" style="display:none;">Knife</span>
+    <span id="rop" class="element" style="display:none;">Rope</span>
+    <span id="buk" class="element" style="display:none;">Book</span>
+    <span id="butter" class="element" style="display:none;">Butterfly</span>
+    <span id="appl" class="element" style="display:none;">Apple</span><br>
+    <span id="mun" class="element" style="display:none;">Moon</span>
+    <span id="con" class="element" style="display:none;">Coin</span>
+    <span id="ax" class="element" style="display:none;">Axe</span>
+    <span id="snouw" class="element" style="display:none;">Snow Flake</span>
+    <span id="forck" class="element" style="display:none;">Fork</span>
+    <span id="feathr" class="element" style="display:none;">Feather</span>
+</div>
+<div class="side_info">
+ <div id="timer"></div>
+ <div id="count"></div>
+ <div id="left"></div>
+</div>
+<div class="instructions2" style="display:none;">
+<h2 class="presentation">- Click on the old Arrow to continue...<br>
+Remember: There's no way back...
+</div>
+<button id=refresh type="refresh" style="display:none;">Play Again</button>
+<a href="winter.html"><div class="forward" style="display:none;"></div></a>
+</div>
+</body>
+<script type="text/javascript" src="script.js"></script>
+</html>

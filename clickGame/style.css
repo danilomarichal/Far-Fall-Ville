@@ -1,0 +1,725 @@
+#level1{
+position: absolute;
+background-image:url(images/pink.jpg);
+background-size: cover;
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-position: center;
+text-align: center;
+}
+#level2{
+position: absolute;
+background-image:url(images/cold.jpg);
+background-size: cover;
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-position: center;
+text-align: center;
+}
+#level3{
+position: absolute;
+background-image:url(images/spring.jpg);
+background-size: cover;
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-position: center;
+text-align: center;
+}
+
+#container{
+position: fixed;
+width:100%;
+height: 100%;
+background-image: url(https://media.giphy.com/media/3xz2BVxzjZVnGdgGVW/giphy.gif);
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+opacity: 0.1;
+}
+#container2{
+position: fixed;
+width:100%;
+height: 100%;
+background-image: url(https://media.giphy.com/media/13vApzBcTP3TLa/giphy.gif);
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+opacity: 0;
+}
+#container3{
+position: fixed;
+width:100%;
+height: 100%;
+background-image: url(https://media.giphy.com/media/1k5gPw7hV8ifC/giphy.gif);
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+opacity: 0.1;
+}
+#sparkle{
+}
+#one{
+top: 87%;
+left: 18%;
+//animation: shine 3s infinite;
+}
+#two{
+top: 40%;
+left: 18%;
+//animation: shine 1.8s infinite;
+}
+#three{
+top: 60%;
+left: 10%;
+//animation: shine 3.3s infinite;
+}
+#four{
+top: 65%;
+left: 33%;
+//animation: shine 2.2s infinite;
+}
+#five{
+top: 70%;
+left: 45%;
+//animation: shine 2.4s infinite;
+}
+#six{
+top: 80%;
+left: 80%;
+//animation: shine 3.5s infinite;
+}
+#seven{
+top: 67%;
+left: 70%;
+//animation: shine 3.9s infinite;
+}
+#eight{
+top: 50%;
+left: 85%;
+//animation: shine 3.2s infinite;
+}
+#nine{
+top: 30%;
+left: 90%;
+//animation: shine 2.5s infinite;
+}
+#ten{
+top: 18%;
+left: 20%;
+//animation: shine 2.2s infinite;
+}
+
+
+.shine{
+position: fixed;
+height:40px;
+width:40px;
+background-image: url(images/shining.png);
+background-position: center;
+background-size: 100%;
+}
+
+@keyframes shine{
+0%{opacity:1;}
+100%{opacity: 0;}
+0%{transform:rotate(360deg)};
+100%{opacity: 0;}
+0%{opacity:1;}
+}
+
+#start{
+position: fixed;
+  height: 70px;
+  width: 20%;
+  background-color: transparent;
+  border: none;
+  left: 42%;
+  top: 50%;
+  font-size: 33px;
+}
+
+.instructions{
+  position: fixed;
+  height: 250px;
+  width: 60%;
+  margin: 12% 20% 0 20%;
+  background-color: rgba(0,0,0,0.3);
+  animation: slow 2s ease-in;
+}
+.instructions2{
+  position: fixed;
+  height: 100px;
+  width: 60%;
+  margin: 10% 20% 0 20%;
+  background-color: rgba(0,0,0,0.2);
+  animation: slow 2s ease-in;
+}
+.instructions1{
+  position: fixed;
+  height: 250px;
+  width: 60%;
+  margin: 12% 20% 0 20%;
+  background-color: rgba(0,0,0,0.2);
+  animation: slow 2s ease-in;
+}
+.presentation{
+  color: white;
+}
+@keyframes slow{
+0%{opacity: 0.0;}
+20%{opacity: 0.2;}
+40%{opacity: 0.4;}
+60%{opacity: 0.6;}
+80%{opacity: 0.8;}
+100%{opacity: 1;}
+}
+#continue{
+  position: fixed;
+  height: 90px;
+  width: 35%;
+  background-color: transparent;
+  border:none;
+  left: 33%;
+  top: 55%;
+  font-size: 33px;
+  animation: slow 2s ease-in;
+}
+#game{
+  position: fixed;
+  height: 90px;
+  width: 35%;
+  background-color: transparent;
+  border:none;
+  left: 33%;
+  top: 55%;
+  font-size: 33px;
+  animation: slow 2s ease-in;
+}
+#game2{
+  position: fixed;
+  height: 90px;
+  width: 35%;
+  background-color: transparent;
+  border:none;
+  left: 33%;
+  top: 55%;
+  font-size: 33px;
+  animation: slow 2s ease-in;
+}
+#game3{
+  position: fixed;
+  height: 90px;
+  width: 35%;
+  background-color: transparent;
+  border:none;
+  left: 33%;
+  top: 55%;
+  font-size: 33px;
+  animation: slow 2s ease-in;
+}
+#not{
+  position: fixed;
+  height: 90px;
+  width: 35%;
+  background-color: transparent;
+  border:none;
+  left: 33%;
+  top: 65%;
+  font-size: 33px;
+  animation: slow 2s ease-in;
+}
+.settings{
+position: fixed;
+width: 100%;
+height: 1px;
+background-color: rgba(255,255,255,0.0);
+top: 0;
+left: 0;
+transition: 2s;
+color: white;
+}
+.side_info{
+position: fixed;
+width: 1px;
+height: 100%;
+background-color:rgba(0,0,0,0.4);
+right: 0;
+top: 0;
+transition: 2s;
+}
+.element{
+  padding:10px 20px 0 20px;
+  display: inline-block;
+  font-size: 24px;
+animation: slow 4s ease-in;
+}
+#timer{
+height: 100px;
+width: 120px;
+margin-top: 120px;
+background-color: transparent;
+font-size: 50px;
+color:white;
+}
+#win{
+height: 100px;
+width: 120px;
+margin-top: 120px;
+background-color: transparent;
+font-size: 33px;
+color:white;
+}
+
+#count{
+height: 120px;
+width: 120px;
+margin-top: 60px;
+background-color: black;
+
+}
+#left{
+height: 100px;
+width: 120px;
+margin-top: 60px;
+background-color: transparent;
+font-size: 50px;
+color:white;
+}
+#timer2{
+height: 100px;
+width: 120px;
+margin-top: 100px;
+background-color: transparent;
+font-size: 50px;
+color:white;
+}
+#count2{
+height: 140px;
+width: 120px;
+margin-top: 55px;
+background-color: black;
+
+}
+#left2{
+height: 100px;
+width: 120px;
+margin-top: 60px;
+background-color: transparent;
+font-size: 50px;
+color:white;
+}
+#refresh{
+position: fixed;
+  border:none;
+  background-color: transparent;
+  font-size: 33px;
+  top:50%;
+  left:44%;
+}
+.forward{
+position: fixed;
+height: 200px;
+width: 100px;
+background-image: url(images/arrow.png);
+background-size: 80%;
+background-position: center;
+background-repeat: no-repeat;
+top: 40%;
+left: 40%;
+animation: float 4s ease-in-out infinite;
+opacity: 0;
+}
+.forward2{
+  position: fixed;
+height: 200px;
+width: 200px;
+background-image: url(images/arrowLeft.png);
+background-size: 80%;
+background-position: center;
+background-repeat: no-repeat;
+top: 40%;
+left: 30%;
+animation: float 4s ease-in-out infinite;
+opacity: 0;
+}
+.forward3{
+position: fixed;
+height: 200px;
+width: 200px;
+background-image: url(images/arrow.png);
+background-size: 55%;
+background-position: center;
+background-repeat: no-repeat;
+top: 40%;
+left: 45%;
+animation: float 4s ease-in-out infinite;
+opacity: 0;
+}
+#refresh3{
+position: fixed;
+  height: 70px;
+  width: 30%;
+  background-color: transparent;
+  border: none;
+  left: 38%;
+  top: 65%;
+  font-size: 33px;
+}
+
+@keyframes float {
+  0% {transform: translatey(0px);}
+  50% {transform: translatey(-20px);}
+  100% {transform: translatey(0px);}
+}
+#butterfly{
+  position: fixed;
+  height: 50px;
+  width: 50px;
+  left:80%;
+  top:80%;
+  background-image: url(images/butterfly.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+ transform: rotate(20deg);
+ //transition: 2s;
+ opacity: 0;
+}
+#candle{
+  position: fixed;
+  height: 75px;
+  width: 50px;
+  left:60%;
+  top:82%;
+  background-image: url(images/candle.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+ //transform: rotate(20deg);
+ //transition: 2s;
+ opacity: 0;
+}
+#knife{
+  position: fixed;
+  height: 50px;
+  width: 50px;
+  left:43%;
+  top:80%;
+  background-image: url(images/knife.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+ transform: rotate(-65deg);
+ //transition: 2s;
+ opacity: 0;
+}
+#rope{
+  position: fixed;
+  height: 50px;
+  width: 50px;
+  left:17%;
+  top:33%;
+  background-image: url(images/rope.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+ //transition: 2s;
+ opacity: 0;
+}
+#book{
+  position: fixed;
+  height: 60px;
+  width: 60px;
+  left:31%;
+  top:82%;
+  background-image: url(images/book.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+ //transform: rotate(20deg);
+ //transition: 2s;
+ opacity: 0;
+}
+#apple{
+  position: fixed;
+  height: 70px;
+  width: 70px;
+  left:70%;
+  top:60%;
+  background-image: url(images/apple.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+ //transform: rotate(20deg);
+ //transition: 2s;
+ opacity: 0;
+}
+#moon{
+  position: fixed;
+  height: 50px;
+  width: 50px;
+  left:36%;
+  top:25%;
+  background-image: url(images/moon.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+ //transform: rotate(20deg);
+ //transition: 2s;
+ opacity: 0;
+}
+#coin{
+  position: fixed;
+  height: 25px;
+  width: 25px;
+  left:16%;
+  top:94%;
+  background-image: url(images/coin.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+ transform: skew(20deg);
+ //transition: 2s;
+ opacity: 0;
+}
+#axe{
+  position: fixed;
+  height: 100px;
+  width: 100px;
+  left:50%;
+  top:70%;
+  background-image: url(images/axe.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+ transform: rotate(-65deg);
+ //transition: 2s;
+ opacity: 0;
+}
+#snow{
+  position: fixed;
+  height: 50px;
+  width: 50px;
+  left:42%;
+  top:60%;
+  background-image: url(images/snowflake.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+ //transform: rotate(20deg);
+ //transition: 2s;
+ opacity: 0;
+}
+#feather{
+  position: fixed;
+  height: 60px;
+  width: 60px;
+  left:2%;
+  top:60%;
+  background-image: url(images/feather.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+ transform: rotate(90deg);
+ //transition: 2s;
+ opacity: 0;
+}
+#fork{
+  position: fixed;
+  height: 100px;
+  width: 80px;
+  left:57%;
+  top:10%;
+  background-image: url(images/fork.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+ transform: rotate(110deg);
+ //transition: 2s;
+ opacity: 0;
+}
+#key{
+  position: fixed;
+  height: 40px;
+  width: 40px;
+  left:14%;
+  top:67%;
+  background-image: url(images/key.png);
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+ transform: rotate(90deg);
+ //transition: 2s;
+ opacity: 0;
+}
+#gem{
+  position: fixed;
+  height: 60px;
+  width: 60px;
+  left:81.3%;
+  top:27.5%;
+  background-image: url(images/gem.png);
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+ //transform: rotate(90deg);
+ //transition: 2s;
+ opacity: 0;
+}
+#cross{
+  position: fixed;
+  height: 120px;
+  width: 120px;
+  left:56%;
+  top:60%;
+  background-image: url(images/cross.png);
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+ //transform: rotate(90deg);
+ //transition: 2s;
+ opacity: 0;
+}
+#candlestick{
+  position: fixed;
+  height: 90px;
+  width: 90px;
+  left:24%;
+  top:56.5%;
+  background-image: url(images/candlestick.png);
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+ //transform: rotate(90deg);
+ //transition: 2s;
+ opacity: 0;
+}
+#hat{
+  position: fixed;
+  height: 120px;
+  width: 120px;
+  left:4%;
+  top:50%;
+  background-image: url(images/hat.png);
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+ //transform: rotate(90deg);
+ //transition: 2s;
+ opacity: 0;
+}
+#pitcher{
+  position: fixed;
+  height: 60px;
+  width: 60px;
+  left:43%;
+  top:50.5%;
+  background-image: url(images/pitcher.png);
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+ //transform: rotate(90deg);
+ //transition: 2s;
+ opacity: 0;
+}
+#snake{
+  position: fixed;
+  height: 140px;
+  width: 140px;
+  left:74%;
+  top:82%;
+  background-image: url(images/snake.png);
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+ //transform: rotate(90deg);
+ //transition: 2s;
+ opacity: 0;
+}
+#broom{
+  position: fixed;
+  height: 100px;
+  width: 100px;
+  left:20%;
+  top:20%;
+  background-image: url(images/broom.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+ transform: rotate(10deg);
+ //transition: 2s;
+ opacity: 0;
+}
+#telescope{
+  position: fixed;
+  height: 200px;
+  width: 200px;
+  left:20%;
+  top:70%;
+  background-image: url(images/telescope.png);
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+ //transform: rotate(90deg);
+ //transition: 2s;
+ opacity: 0;
+}
+#crown{
+  position: fixed;
+  height: 80px;
+  width: 80px;
+  left:66.2%;
+  top:15%;
+  background-image: url(images/crown.png);
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+ transform: skew(10deg);
+ //transition: 2s;
+ opacity: 0;
+}
+#sword{
+  position: fixed;
+  height: 100px;
+  width: 100px;
+  left:33.5%;
+  top:10%;
+  background-image: url(images/sword.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+ transform: rotate(-90deg);
+ //transition: 2s;
+ opacity: 0;
+}
+#raven{
+  position: fixed;
+  height: 100px;
+  width: 100px;
+  left:47%;
+  top:23%;
+  background-image: url(images/raven.png);
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+ //transform: rotate(90deg);
+ //transition: 2s;
+ opacity: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

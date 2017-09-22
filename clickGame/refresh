@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Far-Fall Ville</title>
+  <script type="text/javascript" src="jquery.js"></script>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body id=level2>
+<div id="container2">
+
+<audio class="player" autoplay="autoplay" loop="true">
+
+  <source src="music/chimera.mp3" type="audio/mpeg">
+
+</audio>
+<audio class="sound" controls preload="none" style="display:none">
+    <source src="music/twinkle.mp3" type="audio/mpeg">
+
+</audio>
+<audio class="dust" controls preload="none" style="display:none">
+    <source src="music/twinkle.mp3" type="audio/mpeg">
+
+</audio>
+
+<div id="key" class="all2" style="display:none;" ></div>
+<div id="cross" class="all2" style="display:none;" ></div>
+<div id="candlestick" class="all2" style="display:none;" ></div>
+<div id="hat" class="all2" style="display:none;" ></div>
+<div id="gem" class="all2" style="display:none;" ></div>
+<div id="pitcher" class="all2" style="display:none;" ></div>
+<div id="snake" class="all2" style="display:none;" ></div>
+<div id="broom" class="all2" style="display:none;" ></div>
+<div id="telescope" class="all2" style="display:none;" ></div>
+<div id="crown" class="all2" style="display:none;" ></div>
+<div id="sword" class="all2" style="display:none;" ></div>
+<div id="raven" class="all2" style="display:none;" ></div>
+
+
+<div class="instructions">
+<h2 class="presentation">- It's getting really cold.<br><br>
+- I can see the Winter Kingdom Castle from here.<br><br>
+- We should get in,<br><br>
+- I'm sure we can find some answers there...
+</h2>
+<button type="submit" id="continue">Continue Reading...</button>
+</div>
+
+<div class="instructions1" style="display:none;">
+<h2 class="presentation">- Just as I was expecting.<br><br>
+- I can see many of the Far-Fall lost objects around here...<br><br>
+- But not a single person, they must be sleeping until the season is ready.<br>
+- Let's find our objects and leave this freezing place...
+<button type="submit" id="game2">Get in the castle</button>
+</h2>
+</div>
+
+<div class="settings">
+    <span id="candlstck" class="element" style="display:none;">CandleStick</span>
+    <span id="kee" class="element" style="display:none;">Key</span>
+    <span id="swrd" class="element" style="display:none;">Sword</span>
+    <span id="gm" class="element" style="display:none;">Gem</span>
+    <span id="ptchr" class="element" style="display:none;">Pitcher</span>
+    <span id="shild" class="element" style="display:none;">Shield</span><br>
+    <span id="snak" class="element" style="display:none;">Snake</span>
+    <span id="brum" class="element" style="display:none;">Broom</span>
+    <span id="cros" class="element" style="display:none;">Cross</span>
+    <span id="ravn" class="element" style="display:none;">Raven</span>
+    <span id="ht" class="element" style="display:none;">Hat</span>
+    <span id="tscope" class="element" style="display:none;">Telescope</span>
+</div>
+
+<div class="side_info">
+ <div id="timer2"></div>
+ <div id="count2"></div>
+ <div id="left2"></div>
+</div>
+<div class="instructions2" style="display:none;">
+<h2 class="presentation">- Click on the old Arrow to continue...<br>
+And remember: There's no way back...
+</div>
+<button id=refresh type="refresh" style="display:none;">Play Again</button>
+<a href="spring.html"><div class="forward" style="display:none;"></div></a>
+</div>
+
+</div>
+</body>
+<script type="text/javascript" src="script.js"></script>
+</html>
+
