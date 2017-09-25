@@ -25,7 +25,15 @@ background-attachment: fixed;
 background-position: center;
 text-align: center;
 }
-
+#level4{
+position: absolute;
+background-image:url(images/ocean.jpg);
+background-size: cover;
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-position: center;
+text-align: center;
+}
 #container{
 position: fixed;
 width:100%;
@@ -56,22 +64,30 @@ background-position: center;
 background-size: cover;
 opacity: 0.1;
 }
-#sparkle{
+#container4{
+position: fixed;
+width:100%;
+height: 100%;
+background-image: url(https://media.giphy.com/media/LX32yWsfL1oLS/giphy.gif);
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+opacity: 0.1;
 }
 #one{
 top: 87%;
 left: 18%;
-//animation: shine 3s infinite;
+//animation: shine 2s infinite;
 }
 #two{
 top: 40%;
 left: 18%;
-//animation: shine 1.8s infinite;
+//animation: shine 2.8s infinite;
 }
 #three{
 top: 60%;
 left: 10%;
-//animation: shine 3.3s infinite;
+//animation: shine 2.3s infinite;
 }
 #four{
 top: 65%;
@@ -86,17 +102,17 @@ left: 45%;
 #six{
 top: 80%;
 left: 80%;
-//animation: shine 3.5s infinite;
+//animation: shine 2.5s infinite;
 }
 #seven{
 top: 67%;
 left: 70%;
-//animation: shine 3.9s infinite;
+//animation: shine 2.9s infinite;
 }
 #eight{
 top: 50%;
 left: 85%;
-//animation: shine 3.2s infinite;
+//animation: shine 2.2s infinite;
 }
 #nine{
 top: 30%;
@@ -145,6 +161,7 @@ position: fixed;
   margin: 12% 20% 0 20%;
   background-color: rgba(0,0,0,0.3);
   animation: slow 2s ease-in;
+  text-align: center;
 }
 .instructions2{
   position: fixed;
@@ -153,6 +170,7 @@ position: fixed;
   margin: 10% 20% 0 20%;
   background-color: rgba(0,0,0,0.2);
   animation: slow 2s ease-in;
+  text-align: center;
 }
 .instructions1{
   position: fixed;
@@ -160,6 +178,15 @@ position: fixed;
   width: 60%;
   margin: 12% 20% 0 20%;
   background-color: rgba(0,0,0,0.2);
+  animation: slow 2s ease-in;
+  text-align: center;
+}
+.fairy_mssg{
+  position: fixed;
+  height: 250px;
+  width: 60%;
+  margin: 2% 20% 0 20%;
+  background-color: rgba(0,0,0,0.3);
   animation: slow 2s ease-in;
 }
 .presentation{
@@ -296,11 +323,34 @@ color:white;
 #count2{
 height: 140px;
 width: 120px;
-margin-top: 55px;
+margin-top: 68px;
 background-color: black;
 
 }
 #left2{
+height: 100px;
+width: 120px;
+margin-top: 60px;
+background-color: transparent;
+font-size: 50px;
+color:white;
+}
+#timer3{
+height: 100px;
+width: 120px;
+margin-top: 100px;
+background-color: transparent;
+font-size: 50px;
+color:white;
+}
+#count3{
+height: 140px;
+width: 120px;
+margin-top: 55px;
+background-color: black;
+
+}
+#left3{
 height: 100px;
 width: 120px;
 margin-top: 60px;
@@ -347,6 +397,19 @@ position: fixed;
 height: 200px;
 width: 200px;
 background-image: url(images/arrow.png);
+background-size: 55%;
+background-position: center;
+background-repeat: no-repeat;
+top: 40%;
+left: 45%;
+animation: float 4s ease-in-out infinite;
+opacity: 0;
+}
+.forward4{
+position: fixed;
+height: 200px;
+width: 200px;
+background-image: url(images/arrow_down.png);
 background-size: 55%;
 background-position: center;
 background-repeat: no-repeat;
@@ -556,7 +619,7 @@ position: fixed;
   position: fixed;
   height: 60px;
   width: 60px;
-  left:81.3%;
+  left:82.5%;
   top:27.5%;
   background-image: url(images/gem.png);
   background-size: 50%;
@@ -599,7 +662,7 @@ position: fixed;
   height: 120px;
   width: 120px;
   left:4%;
-  top:50%;
+  top:52%;
   background-image: url(images/hat.png);
   background-size: 50%;
   background-repeat: no-repeat;
@@ -613,7 +676,7 @@ position: fixed;
   height: 60px;
   width: 60px;
   left:43%;
-  top:50.5%;
+  top:51%;
   background-image: url(images/pitcher.png);
   background-size: 50%;
   background-repeat: no-repeat;
@@ -706,11 +769,94 @@ position: fixed;
  //transition: 2s;
  opacity: 0;
 }
-
-
-
-
-
+#fairy{
+  position: fixed;
+  background-image: url(images/fairy.png);
+  background-position: center;
+  background-size: 80%;
+  background-repeat: no-repeat;
+  top:50%;
+  left: 50%;
+  height: 50px;
+  width: 50px;
+  opacity:0;
+}
+#magic_flower{
+  position: fixed;
+  background-image: url(images/flower.png);
+  background-position: center;
+  background-size: 80%;
+  background-repeat: no-repeat;
+  top:79%;
+  left: 80%;
+  height: 50px;
+  width: 50px;
+  opacity:0;
+}
+.all3{
+  position: fixed;
+  background-position: center;
+  background-size: 80%;
+  background-repeat: no-repeat;
+  height: 80px;
+  width: 80px;
+  opacity:0;
+}
+#pink1{
+ background-image: url(images/pink1.gif);
+ top:10%;
+ left:22%;
+ transform: rotate(30deg);
+}
+#pink{
+ background-image: url(images/pink.png);
+ top:74%;
+ left:63%;
+}
+#orange{
+ background-image: url(images/orange.png);
+ top:40%;
+ left:40%;
+ transform: rotate(30deg);
+}
+#blue{
+ background-image: url(images/blue.png);
+ top:8%;
+ left:76%;
+ transform: rotate(-30deg);
+}
+#dark{
+ background-image: url(images/dark.png);
+ top:65%;
+ left:53%;
+ transform: rotate(-40deg);
+}
+#multicolor{
+ background-image: url(images/multicolor.png);
+ top:40%;
+ left:70%;
+}
+#brown{
+ background-image: url(images/brown.png);
+ top:20%;
+ left:50%;
+ transform:rotate(40deg);
+}
+#purple{
+ background-image: url(images/purple.png);
+ top:27%;
+ left:12%;
+}
+#yellow{
+ background-image: url(images/yellow.png);
+ top:77%;
+ left:44%;
+}
+#green{
+ background-image: url(images/green.png);
+ top:65%;
+ left:3%;
+}
 
 
 

@@ -56,9 +56,10 @@ $('#game2').on('click', function(){
   $('.side_info').css({'transition':'4s','width':'120px'});
   $('#level2').css({'transition':'4s','background-image':'url(images/castle.jpg)'});
   $('.element').show();
+  $('.element').css({'transition':'10s','opacity':'0.4'});
   $('.all2').show();
-  $('.all2').css({'transition':'8s','opacity':'0.4'});
-  $('#container2').css({'transition':'8s','opacity':'0.4'});
+  $('.all2').css({'transition':'4s','opacity':'0.4'});
+  $('#container2').css({'transition':'10s','opacity':'0.4'});
 //--- function starts countdown ---
   function tick() {
 var counter = $('#timer2');
@@ -652,37 +653,17 @@ $('#refresh').remove();
 }
 allTwo();
 
-function moveStarsDown(){
-$('.shine').css({'animation':'none'});
-$('#one').css({'left':'18%','top':'-10%','transition':'4s'});
-$('#two').css({'left':'18%','top':'-10%','transition':'4s'});
-$('#three').css({'left':'10%','top':'-10%','transition':'4s'});
-$('#four').css({'left':'33%','top':'-10%','transition':'4s'});
-$('#five').css({'left':'45%','top':'-10%','transition':'4s'});
-$('#six').css({'left':'80%','top':'-10%','transition':'4s'});
-$('#seven').css({'left':'70%','top':'-10%','transition':'4s'});
-$('#eight').css({'left':'85%','top':'-10%','transition':'4s'});
-$('#nine').css({'left':'90%','top':'-10%','transition':'4s'});
-$('#ten').css({'left':'20%','top':'-10%','transition':'4s'});
+
+
+//---Fairy Section ---
+
+function moveStarsDown(e){
+e.css({'left':'50%','top':'-10%','transition':'4s'});
 }
 
+function moveMove(){
 
-
-$('#not').on('click', function(){
- $('.instructions1').css({'display':'none'});
- moveStarsDown($('.shine'));
- $('.instructions2').show();
- $('.forward3').show();
- $('.forward3').css({'opacity':'1','transition':'4s'});
-$('#refresh3').show();
-$('#refresh3').css({'opacity':'1','transition':'4s'});
-});
-
-
-$('#game3').on('click', function(){
-$('.instructions1').css({'display':'none'});
-
-function moveStars(e){
+function moveStars(){
 $('#one').css('top', Math.random()*window.innerHeight);
 $('#one').css('left', Math.random()*window.innerWidth);
 $('#two').css('top', Math.random()*window.innerHeight);
@@ -704,88 +685,430 @@ $('#nine').css('left', Math.random()*window.innerWidth);
 $('#ten').css('top', Math.random()*window.innerHeight);
 $('#ten').css('left', Math.random()*window.innerWidth);
 $('#one').css({'transition':'1s'});
-
 $('#two').css({'transition':'1s'});
-
 $('#three').css({'transition':'1s'});
-
 $('#four').css({'transition':'1s'});
-
 $('#five').css({'transition':'1s'});
-
 $('#six').css({'transition':'1s'});
-
 $('#seven').css({'transition':'1s'});
-
 $('#eight').css({'transition':'1s'});
-
 $('#nine').css({'transition':'1s'});
-
 $('#ten').css({'transition':'1s'});
-
 };
-//moveStars();//Fires when page loads, give the duck random startin position
-setInterval(moveStars,Math.random()*5000);
+
+setInterval(moveStars,Math.random()*3000);
+}
+
+
+$('#not').on('click', function(){
+ $('.instructions1').css({'display':'none'});
+ moveStarsDown($('.shine'));
+ $('.instructions2').show();
+ $('.forward3').show();
+ $('.forward3').css({'opacity':'1','transition':'4s'});
+$('#refresh3').show();
+$('#refresh3').css({'opacity':'1','transition':'4s'});
+});
+
+
+
+var countStars = 10;
+function fairy(){
+
+$('#game3').on('click', function(){
+$('.instructions1').css({'display':'none'});
+moveMove();
 
 $('#one').on('click', function(){
-//$('#one').css({'top':'90%','left':'60','transition':'1s', 'box-shadow':'0 0 10px white', 'border-radius':'50%'});
 sound();
+$('#one').css('opacity','0');
+$('#one').removeAttr('id');
+countStars--;
+console.log(countStars);
+if(countStars<=0){
+$('.shine').css({'opacity':'1','top':'50%','left':'50%','transition':'1s'});
+$('#fairy').show();
+$('#magic_flower').show();
+$('#magic_flower').css({'-webkit-transform':'scale(3)','opacity':'1','transition':'7s'});
+$('#fairy').css({'-webkit-transform':'scale(7)','opacity':'1','transition':'7s'});
+$('#container3').css({'opacity':'0','transition':'7s'});
+$(".fairy_mssg").show();
+}
 });
-
 
 $('#two').on('click', function(){
-$('#two').css({'top':'90%','left':'60','transition':'1s', 'box-shadow':'0 0 10px white', 'border-radius':'50%'});
 sound();
+$('#two').css('opacity','0');
+$('#two').removeAttr('id');
+countStars--;
+console.log(countStars);
+if(countStars<=0){
+$('.shine').css({'opacity':'1','top':'50%','left':'50%','transition':'1s'});
+$('#fairy').show();
+$('#magic_flower').show();
+$('#magic_flower').css({'-webkit-transform':'scale(3)','opacity':'1','transition':'7s'});
+$('#fairy').css({'-webkit-transform':'scale(7)','opacity':'1','transition':'7s'});
+$('#container3').css({'opacity':'0','transition':'7s'});
+$(".fairy_mssg").show();
+}
 });
-
 
 $('#three').on('click', function(){
-$('#three').css({'top':'90%','left':'60','transition':'1s', 'box-shadow':'0 0 10px white', 'border-radius':'50%'});
 sound();
+$('#three').css('opacity','0');
+$('#three').removeAttr('id');
+countStars--;
+console.log(countStars);
+if(countStars<=0){
+$('.shine').css({'opacity':'1','top':'50%','left':'50%','transition':'1s'});
+$('#fairy').show();
+$('#magic_flower').show();
+$('#magic_flower').css({'-webkit-transform':'scale(3)','opacity':'1','transition':'7s'});
+$('#fairy').css({'-webkit-transform':'scale(7)','opacity':'1','transition':'7s'});
+$('#container3').css({'opacity':'0','transition':'7s'});
+$(".fairy_mssg").show();
+}
 });
-
 
 $('#four').on('click', function(){
-$('#four').css({'top':'90%','left':'60','transition':'1s', 'box-shadow':'0 0 10px white', 'border-radius':'50%'});
 sound();
+$('#four').css('opacity','0');
+$('#four').removeAttr('id');
+countStars--;
+console.log(countStars);
+if(countStars<=0){
+$('.shine').css({'opacity':'1','top':'50%','left':'50%','transition':'1s'});
+$('#fairy').show();
+$('#magic_flower').show();
+$('#magic_flower').css({'-webkit-transform':'scale(3)','opacity':'1','transition':'7s'});
+$('#fairy').css({'-webkit-transform':'scale(7)','opacity':'1','transition':'7s'});
+$('#container3').css({'opacity':'0','transition':'7s'});
+$(".fairy_mssg").show();
+}
 });
-
 
 $('#five').on('click', function(){
-$('#five').css({'top':'90%','left':'60','transition':'1s', 'box-shadow':'0 0 10px white', 'border-radius':'50%'});
 sound();
+$('#five').css('opacity','0');
+$('#five').removeAttr('id');
+countStars--;
+console.log(countStars);
+if(countStars<=0){
+$('.shine').css({'opacity':'1','top':'50%','left':'50%','transition':'1s'});
+$('#fairy').show();
+$('#magic_flower').show();
+$('#magic_flower').css({'-webkit-transform':'scale(3)','opacity':'1','transition':'7s'});
+$('#fairy').css({'-webkit-transform':'scale(7)','opacity':'1','transition':'7s'});
+$('#container3').css({'opacity':'0','transition':'7s'});
+$(".fairy_mssg").show();
+}
 });
-
 
 $('#six').on('click', function(){
-$('#six').css({'top':'90%','left':'60','transition':'1s', 'box-shadow':'0 0 10px white', 'border-radius':'50%'});
 sound();
+$('#six').css('opacity','0');
+$('#six').removeAttr('id');
+countStars--;
+console.log(countStars);
+if(countStars<=0){
+$('.shine').css({'opacity':'1','top':'50%','left':'50%','transition':'1s'});
+$('#fairy').show();
+$('#magic_flower').show();
+$('#magic_flower').css({'-webkit-transform':'scale(3)','opacity':'1','transition':'7s'});
+$('#fairy').css({'-webkit-transform':'scale(7)','opacity':'1','transition':'7s'});
+$('#container3').css({'opacity':'0','transition':'7s'});
+$(".fairy_mssg").show();
+}
 });
-
 
 $('#seven').on('click', function(){
-$('#seven').css({'top':'90%','left':'60','transition':'1s', 'box-shadow':'0 0 10px white', 'border-radius':'50%'});
 sound();
+$('#seven').css('opacity','0');
+$('#seven').removeAttr('id');
+countStars--;
+console.log(countStars);
+if(countStars<=0){
+$('.shine').css({'opacity':'1','top':'50%','left':'50%','transition':'1s'});
+$('#fairy').show();
+$('#magic_flower').show();
+$('#magic_flower').css({'-webkit-transform':'scale(3)','opacity':'1','transition':'7s'});
+$('#fairy').css({'-webkit-transform':'scale(7)','opacity':'1','transition':'7s'});
+$('#container3').css({'opacity':'0','transition':'7s'});
+$(".fairy_mssg").show();
+}
 });
-
 
 $('#eight').on('click', function(){
-$('#eight').css({'top':'90%','left':'60','transition':'1s', 'box-shadow':'0 0 10px white', 'border-radius':'50%'});
 sound();
+$('#eight').css('opacity','0');
+$('#eight').removeAttr('id');
+countStars--;
+console.log(countStars);
+if(countStars<=0){
+$('.shine').css({'opacity':'1','top':'50%','left':'50%','transition':'1s'});
+$('#fairy').show();
+$('#magic_flower').show();
+$('#magic_flower').css({'-webkit-transform':'scale(3)','opacity':'1','transition':'7s'});
+$('#fairy').css({'-webkit-transform':'scale(7)','opacity':'1','transition':'7s'});
+$('#container3').css({'opacity':'0','transition':'7s'});
+$(".fairy_mssg").show();
+}
 });
-
 
 $('#nine').on('click', function(){
-$('#nine').css({'top':'90%','left':'60','transition':'1s', 'box-shadow':'0 0 10px white', 'border-radius':'50%'});
 sound();
+$('#nine').css('opacity','0');
+$('#nine').removeAttr('id');
+countStars--;
+console.log(countStars);
+if(countStars<=0){
+$('.shine').css({'opacity':'1','top':'50%','left':'50%','transition':'1s'});
+$('#fairy').show();
+$('#magic_flower').show();
+$('#magic_flower').css({'-webkit-transform':'scale(3)','opacity':'1','transition':'7s'});
+$('#fairy').css({'-webkit-transform':'scale(7)','opacity':'1','transition':'7s'});
+$('#container3').css({'opacity':'0','transition':'7s'});
+$(".fairy_mssg").show();
+}
 });
+
 $('#ten').on('click', function(){
-$('#ten').css({'top':'90%','left':'60','transition':'1s', 'box-shadow':'0 0 10px white', 'border-radius':'50%'});
 sound();
+$('#ten').css('opacity','0');
+$('#ten').removeAttr('id');
+countStars--;
+console.log(countStars);
+if(countStars<=0){
+$('.shine').css({'opacity':'1','top':'50%','left':'50%','transition':'1s'});
+$('#fairy').show();
+$('#magic_flower').show();
+$('#magic_flower').css({'-webkit-transform':'scale(3)','opacity':'1','transition':'7s'});
+$('#fairy').css({'-webkit-transform':'scale(7)','opacity':'1','transition':'7s'});
+$('#container3').css({'opacity':'0','transition':'7s'});
+$(".fairy_mssg").show();
+}
 });
 
 });
+}
+fairy()
 
+
+//--- Buterflies ---
+
+$('#magic_flower').on('click', function(){
+$('.shine').remove();
+$('#fairy').css({'opacity':'0','transition':'4s'});
+$(".fairy_mssg").css({'opacity':'0','transition':'4s'});
+$('.all3').show();
+$('.all3').css({'opacity':'0.4','transition':'7s'});
+$('.side_info').css({'transition':'4s','width':'120px'});
+$('.presentation').remove();
+$('.fairy_mssg').remove();
+function tick() {
+var counter = $('#timer3');
+seconds--;
+counter.html(seconds);
+if( seconds > 0 ) {
+    setTimeout(tick, 1000);
+  }else if(seconds<=0){
+    counter.html("You lose");
+    moveTwo($('.all3'));
+    $('#refresh').show();
+  }
+}
+tick();
+
+});
+
+
+
+var count_butterflies = 10;
+$('#left3').html(count_butterflies);
+
+function butterfly(){
+
+$('#pink').on('click', function(){
+moveTwo($('#pink'));
+sound();
+$('#count3').css({'transition':'2s','background-image':'url(images/pink.png)', 'background-position':'center', 'background-size':'80%', 'background-repeat':'no-repeat'});
+count_butterflies--;
+$('#left3').html(count_butterflies);
+if(count_butterflies<=0){
+ $('#left3').text("Great Job!");
+$('#timer3').attr('id', 'win');
+$('#win').html("You found all the elements!");
+$('.forward4').show();
+$('.forward4').css({'opacity':'1','transition':'3s'});
+$('.instructions2').show();
+$('.presentation').show();
+$('#refresh').remove();
+}
+});
+
+$('#pink1').on('click', function(){
+moveTwo($('#pink1'));
+sound();
+$('#count3').css({'transition':'2s','background-image':'url(images/pink1.gif)', 'background-position':'center', 'background-size':'80%', 'background-repeat':'no-repeat'});
+count_butterflies--;
+$('#left3').html(count_butterflies);
+if(count_butterflies<=0){
+ $('#left3').text("Great Job!");
+$('#timer3').attr('id', 'win');
+$('#win').html("You found all the elements!");
+$('.forward4').show();
+$('.forward4').css({'opacity':'1','transition':'3s'});
+$('.instructions2').show();
+$('.presentation').show();
+$('#refresh').remove();
+}
+});
+
+$('#dark').on('click', function(){
+moveTwo($('#dark'));
+sound();
+$('#count3').css({'transition':'2s','background-image':'url(images/dark.png)', 'background-position':'center', 'background-size':'80%', 'background-repeat':'no-repeat'});
+count_butterflies--;
+$('#left3').html(count_butterflies);
+if(count_butterflies<=0){
+ $('#left3').text("Great Job!");
+$('#timer3').attr('id', 'win');
+$('#win').html("You found all the elements!");
+$('.forward4').show();
+$('.forward4').css({'opacity':'1','transition':'3s'});
+$('.instructions2').show();
+$('.presentation').show();
+$('#refresh').remove();
+}
+});
+
+$('#blue').on('click', function(){
+moveTwo($('#blue'));
+sound();
+$('#count3').css({'transition':'2s','background-image':'url(images/blue.png)', 'background-position':'center', 'background-size':'80%', 'background-repeat':'no-repeat'});
+count_butterflies--;
+$('#left3').html(count_butterflies);
+if(count_butterflies<=0){
+ $('#left3').text("Great Job!");
+$('#timer3').attr('id', 'win');
+$('#win').html("You found all the elements!");
+$('.forward4').show();
+$('.forward4').css({'opacity':'1','transition':'3s'});
+$('.instructions2').show();
+$('.presentation').show();
+$('#refresh').remove();
+}
+});
+
+$('#orange').on('click', function(){
+moveTwo($('#orange'));
+sound();
+$('#count3').css({'transition':'2s','background-image':'url(images/orange.png)', 'background-position':'center', 'background-size':'80%', 'background-repeat':'no-repeat'});
+count_butterflies--;
+$('#left3').html(count_butterflies);
+if(count_butterflies<=0){
+ $('#left3').text("Great Job!");
+$('#timer3').attr('id', 'win');
+$('#win').html("You found all the elements!");
+$('.forward4').show();
+$('.forward4').css({'opacity':'1','transition':'3s'});
+$('.instructions2').show();
+$('.presentation').show();
+$('#refresh').remove();
+}
+});
+
+$('#brown').on('click', function(){
+moveTwo($('#brown'));
+sound();
+$('#count3').css({'transition':'2s','background-image':'url(images/brown.png)', 'background-position':'center', 'background-size':'80%', 'background-repeat':'no-repeat'});
+count_butterflies--;
+$('#left3').html(count_butterflies);
+if(count_butterflies<=0){
+ $('#left3').text("Great Job!");
+ $('#timer3').attr('id', 'win');
+$('#win').html("You found all the elements!");
+$('.forward4').show();
+$('.forward4').css({'opacity':'1','transition':'3s'});
+$('.instructions2').show();
+$('.presentation').show();
+$('#refresh').remove();
+}
+});
+
+$('#multicolor').on('click', function(){
+moveTwo($('#multicolor'));
+sound();
+$('#count3').css({'transition':'2s','background-image':'url(images/multicolor.png)', 'background-position':'center', 'background-size':'80%', 'background-repeat':'no-repeat'});
+count_butterflies--;
+$('#left3').html(count_butterflies);
+if(count_butterflies<=0){
+ $('#left3').text("Great Job!");
+$('#timer3').attr('id', 'win');
+$('#win').html("You found all the elements!");
+$('.forward4').show();
+$('.forward4').css({'opacity':'1','transition':'3s'});
+$('.instructions2').show();
+$('.presentation').show();
+$('#refresh').remove();
+}
+});
+
+$('#purple').on('click', function(){
+moveTwo($('#purple'));
+sound();
+$('#count3').css({'transition':'2s','background-image':'url(images/purple.png)', 'background-position':'center', 'background-size':'80%', 'background-repeat':'no-repeat'});
+count_butterflies--;
+$('#left3').html(count_butterflies);
+if(count_butterflies<=0){
+ $('#left3').text("Great Job!");
+$('#timer3').attr('id', 'win');
+$('#win').html("You found all the elements!");
+$('.forward4').show();
+$('.forward4').css({'opacity':'1','transition':'3s'});
+$('.instructions2').show();
+$('.presentation').show();
+$('#refresh').remove();
+}
+});
+
+$('#yellow').on('click', function(){
+moveTwo($('#yellow'));
+sound();
+$('#count3').css({'transition':'2s','background-image':'url(images/yellow.png)', 'background-position':'center', 'background-size':'80%', 'background-repeat':'no-repeat'});
+count_butterflies--;
+$('#left3').html(count_butterflies);
+if(count_butterflies<=0){
+ $('#left3').text("Great Job!");
+$('#timer3').attr('id', 'win');
+$('#win').html("You found all the elements!");
+$('.forward4').show();
+$('.forward4').css({'opacity':'1','transition':'3s'});
+$('.instructions2').show();
+$('.presentation').show();
+$('#refresh').remove();
+}
+});
+
+$('#green').on('click', function(){
+moveTwo($('#green'));
+sound();
+$('#count3').css({'transition':'2s','background-image':'url(images/green.png)', 'background-position':'center', 'background-size':'80%', 'background-repeat':'no-repeat'});
+count_butterflies--;
+$('#left3').html(count_butterflies);
+if(count_butterflies<=0){
+ $('#left3').text("Great Job!");
+$('#timer3').attr('id', 'win');
+$('#win').html("You found all the elements!");
+$('.forward4').show();
+$('.forward4').css({'opacity':'1','transition':'3s'});
+$('.instructions2').show();
+$('#refresh').remove();
+}
+});
+
+}
+butterfly();
 
 
 
