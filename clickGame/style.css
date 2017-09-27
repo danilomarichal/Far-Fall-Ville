@@ -73,6 +73,7 @@ background-repeat: no-repeat;
 background-position: center;
 background-size: cover;
 opacity: 0.1;
+text-align: center;
 }
 #one{
 top: 87%;
@@ -201,6 +202,17 @@ position: fixed;
 100%{opacity: 1;}
 }
 #continue{
+  position: fixed;
+  height: 90px;
+  width: 35%;
+  background-color: transparent;
+  border:none;
+  left: 33%;
+  top: 55%;
+  font-size: 33px;
+  animation: slow 2s ease-in;
+}
+#continues{
   position: fixed;
   height: 90px;
   width: 35%;
@@ -857,13 +869,185 @@ position: fixed;
  top:65%;
  left:3%;
 }
+#fishes{
+  position: fixed;
+  top: 10%;
+  left:25%;
+  height: 50%;
+  width: 50%;
+  opacity: 0;
 
+}
+.fish1{
+  height: 150px;
+  width: 20%;
+  background-color: rgba(255,255,255,0.4);
+  border-radius: 5px;
+  border: 2px solid yellow;
+}
+.fish2{
+  height: 150px;
+  width: 20%;
+  background-color: rgba(255,255,255,0.4);
+  border-radius: 5px;
+  border: 2px solid yellow;
+}
+.fish3{
+  height: 150px;
+  width: 20%;
+  background-color: rgba(255,255,255,0.4);
+  border-radius: 5px;
+  border: 2px solid yellow;
+}
+.fish4{
+  height: 150px;
+  width: 20%;
+  background-color: rgba(255,255,255,0.4);
+  border-radius: 5px;
+  border: 2px solid yellow;
+}
+.fish5{
+  height: 150px;
+  width: 20%;
+  background-color: rgba(255,255,255,0.4);
+  border-radius: 5px;
+  border: 2px solid yellow;
+}
+.fish6{
+  height: 150px;
+  width: 20%;
+  background-color: rgba(255,255,255,0.4);
+  border-radius: 5px;
+  border: 2px solid yellow;
+}
 
-
-
-
-
-
+#uno{
+  position: fixed;
+  background-size:90%;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 150px;
+  width: 15%;
+  top:10%;
+  left: 10%;
+}
+#dos{
+  position: fixed;
+  background-size:90%;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 150px;
+  width: 15%;
+  top:70%;
+  left: 10%;
+}
+#tres{
+  position: fixed;
+  background-size:90%;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 150px;
+  width: 15%;
+  top:10%;
+  left: 50%;
+}
+#cuatro{
+  position: fixed;
+  background-size:90%;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 150px;
+  width: 15%;
+  top:70%;
+  left: 70%;
+}
+#cinco{
+  position: fixed;
+  background-size:90%;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 150px;
+  width: 15%;
+  top:40%;
+  left: 10%;
+}
+#seis{
+  position: fixed;
+  background-size:90%;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 150px;
+  width: 15%;
+  top:40%;
+  left: 30%;
+}
+#siete{
+  position: fixed;
+  background-size:90%;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 150px;
+  width: 15%;
+  top:40%;
+  left: 50%;
+}
+#ocho{
+  position: fixed;
+  background-size:90%;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 150px;
+  width: 15%;
+  top:40%;
+  left: 70%;
+}
+#nueve{
+  position: fixed;
+  background-size:90%;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 150px;
+  width: 15%;
+  top:10%;
+  left: 30%;
+}
+#diez{
+  position: fixed;
+  background-size:90%;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 150px;
+  width: 15%;
+  top:70%;
+  left: 30%;
+}
+#once{
+  position: fixed;
+  background-size:90%;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 150px;
+  width: 15%;
+  top:70%;
+  left: 50%;
+}
+#doce{
+  position: fixed;
+  background-size:90%;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 150px;
+  width: 15%;
+  top:10%;
+  left: 70%;
+}
+.matches{
+  position: fixed;
+  color: white;
+  top: 1%;
+  left:40%;
+  opacity: 0;
+}
 
 
 

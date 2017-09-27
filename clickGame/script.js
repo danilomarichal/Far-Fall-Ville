@@ -188,7 +188,7 @@ $('#left').html(12);
 //--- Moves the elements clicked to a diff area ---
 function move(e){
 e.css({'opacity':'1','transition':'0.1s', 'transform':'rotate(360deg)'});
-e.css({'top':'44%','left':'94%','transition':'3s'})
+e.css({'top':'44%','left':'04%','transition':'3s'})
 };
 
 //--- Sound Effect on Clicked Elements---
@@ -1109,6 +1109,184 @@ $('#refresh').remove();
 
 }
 butterfly();
+
+
+//--- Ocean ---
+
+var cards=[$('#uno'),$('#dos'),$('#tres'),$('#cuatro'),$('#cinco'),$('#seis'),$('#siete'),$('#ocho'),$('#nueve'),$('#diez'),$('#once'),$('#doce')];
+var classes=['fish1','fish2','fish3','fish4','fish5','fish6'];
+var name_attr=['']
+var cardsInPlay = [];
+
+function shuffleArray(array) {
+    for (var i = array.length - 1; i > 0; i--) {
+        var j = Math.floor(Math.random() * (i + 1));
+        var temp = array[i];
+        array[i] = array[j];
+        array[j] = temp;
+    }
+ cards[0].attr('class',array[0]);
+ cards[1].attr('class',array[0]);
+ cards[2].attr('class',array[1]);
+ cards[3].attr('class',array[1]);
+ cards[4].attr('class',array[2]);
+ cards[5].attr('class',array[2]);
+ cards[6].attr('class',array[3]);
+ cards[7].attr('class',array[3]);
+ cards[8].attr('class',array[4]);
+ cards[9].attr('class',array[4]);
+ cards[10].attr('class',array[5]);
+ cards[11].attr('class',array[5]);
+ }
+
+
+
+
+function inPlay(elem1, elem2){
+  if(elem1.attr('class') === elem2.attr('class')){
+    elem1.css({'opacity':'0','transition':'3s'});
+    elem2.css({'opacity':'0','transition':'3s'});
+  cardsInPlay=[];
+  }else{
+    alert('Nope!');
+  elem1.css({'background-image':'none','transition':'3s'});
+  elem2.css({'background-image':'none','transition':'3s'});
+  cardsInPlay=[];
+  }
+elem1.html('');
+elem2.html('');
+}
+
+
+function mess(){
+
+$('#uno').on('click',function(){
+sound()
+if(cardsInPlay.length<2){
+cardsInPlay.push($('#uno'));
+$('#uno').css({'background-image':'url(images/medfish.png'});
+inPlay(cardsInPlay[0], cardsInPlay[1]);
+}
+
+});
+$('#dos').on('click',function(){
+sound()
+if(cardsInPlay.length<2){
+cardsInPlay.push($('#dos'));
+$('#dos').css({'background-image':'url(images/medfish.png'});
+inPlay(cardsInPlay[0], cardsInPlay[1]);
+}
+
+});
+$('#tres').on('click',function(){
+sound()
+if(cardsInPlay.length<2){
+cardsInPlay.push($('#tres'));
+$('#tres').css({'background-image':'url(images/bluef.png'});
+inPlay(cardsInPlay[0], cardsInPlay[1]);
+}
+
+});
+$('#cuatro').on('click',function(){
+sound()
+if(cardsInPlay.length<2){
+cardsInPlay.push($('#cuatro'));
+$('#cuatro').css({'background-image':'url(images/bluef.png'});
+inPlay(cardsInPlay[0], cardsInPlay[1]);
+}
+
+});
+$('#cinco').on('click',function(){
+sound()
+if(cardsInPlay.length<2){
+cardsInPlay.push($('#cinco'));
+$('#cinco').css({'background-image':'url(images/otherf.png'});
+inPlay(cardsInPlay[0], cardsInPlay[1]);
+}
+
+});
+$('#seis').on('click',function(){
+sound()
+if(cardsInPlay.length<2){
+cardsInPlay.push($('#seis'));
+$('#seis').css({'background-image':'url(images/otherf.png'});
+inPlay(cardsInPlay[0], cardsInPlay[1]);
+}
+
+});
+
+$('#siete').on('click',function(){
+sound()
+if(cardsInPlay.length<2){
+cardsInPlay.push($('#siete'));
+$('#siete').css({'background-image':'url(images/oceanf.png'});
+inPlay(cardsInPlay[0], cardsInPlay[1]);
+}
+
+});
+
+$('#ocho').on('click',function(){
+sound()
+if(cardsInPlay.length<2){
+cardsInPlay.push($('#ocho'));
+$('#ocho').css({'background-image':'url(images/oceanf.png'});
+inPlay(cardsInPlay[0], cardsInPlay[1]);
+}
+
+});
+
+$('#nueve').on('click',function(){
+sound()
+if(cardsInPlay.length<2){
+cardsInPlay.push($('#nueve'));
+$('#nueve').css({'background-image':'url(images/greyf.png'});
+inPlay(cardsInPlay[0], cardsInPlay[1]);
+}
+
+});
+
+$('#diez').on('click',function(){
+sound()
+if(cardsInPlay.length<2){
+cardsInPlay.push($('#diez'));
+$('#diez').css({'background-image':'url(images/greyf.png'});
+inPlay(cardsInPlay[0], cardsInPlay[1]);
+}
+
+});
+
+$('#once').on('click',function(){
+sound()
+if(cardsInPlay.length<2){
+cardsInPlay.push($('#once'));
+$('#once').css({'background-image':'url(images/blackf.png'});
+inPlay(cardsInPlay[0], cardsInPlay[1]);
+}
+
+});
+
+$('#doce').on('click',function(){
+sound()
+if(cardsInPlay.length<2){
+cardsInPlay.push($('#doce'));
+console.log($('#doce').attr('class'))
+$('#doce').css({'background-image':'url(images/blackf.png'});
+inPlay(cardsInPlay[0], cardsInPlay[1]);
+}
+
+});
+
+}
+mess();
+
+$('#continues').on('click', function(){
+$('#fishes').show();
+$('#fishes').css({'opacity':'1', 'transition':'4s'});
+$('.matches').css({'opacity':'1', 'transition':'4s'});
+$('.instructions').remove();
+$('.presentation').remove();
+shuffleArray(classes);
+});
 
 
 
